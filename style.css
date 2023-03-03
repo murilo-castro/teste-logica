@@ -2,11 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  margin: 0;
 }
 
 body {
-  display: flex;
   min-height: 100vh;
+  display: flex;
   flex-direction: column;
 }
 
@@ -14,11 +18,67 @@ header {
   display: flex;
   justify-content: center;
   padding: 20px;
+  background-color: #a5d9f9;
+}
+
+h1 {
+  font-size: 60px;
 }
 
 main {
+  width: 100%;
+  padding: 20px;
   display: flex;
-  flex-direction: column;
+  flex: 1 0 400px;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.testes {
+  display: flex;
   justify-content: center;
   align-items: center;
+  width: 600px;
+  height: 300px;
+  border: solid 2px #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.testes h2 {
+  padding: 5px 10px;
+  font-size: 30px;
+  color: #0000ff;
+  border: solid 1px;
+  background-color: #d3d3d3;
+}
+
+footer {
+  height: 70px;
+  background-color: #a5d9f9;
+}
+
+#fibonacci-content {
+  background-image: url("https://mystudybay.com.br/storage/upload/mystudybay_foto_sequencia_de_fibonacci_07.jpg");
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.daily-content {
+  background-image: url("https://blog.quantosobra.com.br/static/f1231f521cb9ca2f22ebc8f1835bd95e/40e69/IMG_Destacada_-_Planilha_de_Fechamento_di%25C3%25A1rio_de_Caixa.webp");
+  background-size: cover;
+}
+
+.monthly-content {
+  background-image: url("https://blog.nxfacil.com.br/wp-content/uploads/2017/03/business-nxfacil-1.jpg");
+  background-size: cover;
+}
+
+.reverse-content {
+  background-image: url("https://i2.wp.com/www.fonologica.com.br/blog/wp-content/uploads/2011/11/espelhamento.jpg");
 }
