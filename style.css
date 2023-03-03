@@ -19,6 +19,11 @@ header {
   justify-content: center;
   padding: 20px;
   background-color: #a5d9f9;
+  gap: 20px;
+}
+
+img {
+  width: 60px;
 }
 
 h1 {
