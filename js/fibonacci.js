@@ -20,9 +20,15 @@ btnFibonacci.addEventListener("click", (e) => {
   e.preventDefault();
   const numberInput = document.querySelector("#number-input");
   const result = document.querySelector("#result");
-  if (checkNUmber(Number(numberInput.value)))
+  if (checkNUmber(Number(numberInput.value))) {
     result.innerHTML = `O número ${numberInput.value} pertence a sequência.`;
-  else
+    result.classList.remove("red");
+    result.classList.add("green");
+    numberInput.value = "";
+  } else {
     result.innerHTML = `O número ${numberInput.value} não pertence a sequência.`;
-  numberInput.value = "";
+    result.classList.remove("green");
+    result.classList.add("red");
+    numberInput.value = "";
+  }
 });
