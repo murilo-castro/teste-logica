@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Teste</title>
+  </head>
+  <body>
+    <header>
+      <h1>Testes de Lógica</h1>
+    </header>
+    <main>
+      <section id="fibonacci">
+        <h2>Sequência de Fibonacci</h2>
+        <input
+          id="number-input"
+          type="number"
+          placeholder="Informe um número para verificar."
+        />
+        <button id="btn-fibonacci">Verificar</button>
+        <span id="result"></span>
+      </section>
+      <section id="monthly-closing">
+        <table>
+          <thead>
+            <tr>
+              <th>Estado</th>
+              <th>Faturamento</th>
+              <th>Percentual</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <input
+          id="state"
+          type="text"
+          value="SP"
+          placeholder="Insira a sigla do estado"
+        />
+        <input
+          id="income"
+          value="5000"
+          type="number"
+          placeholder="Insira o valor do faturamento do mês"
+        />
+        <button id="insert-state">Inserir</button>
+        <button id="calc-percentage">Calcular Percentual</button>
+      </section>
+      <section id="reverse-string">
+        <h2>Invertendo palavras</h2>
+        <input id="word" type="text" placeholder="Digi aqui uma palavra" />
+        <button id="btn-reverse-string">Reverter</button>
+      </section>
+    </main>
+    <script src="fibonacci.js"></script>
+    <script src="reverse-string.js"></script>
+    <script src="monthly-invoicing.js"></script>
+    <script src="dailyIncome.js"></script>
+  </body>
+</html>
