@@ -13,32 +13,29 @@
     </header>
     <main>
       <section id="monthly-closing">
-        <table>
-          <thead>
-            <tr>
-              <th>Estado</th>
-              <th>Faturamento</th>
-              <th>Percentual</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-        <input
-          id="state"
-          type="text"
-          value="SP"
-          placeholder="Insira a sigla do estado"
-        />
+        <div class="table">
+          <table>
+            <thead>
+              <tr>
+                <th>Estado</th>
+                <th>Faturamento</th>
+                <th>Percentual</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <input id="state" type="text" placeholder="Insira a sigla do estado" />
         <input
           id="income"
-          value="5000"
           type="number"
-          placeholder="Insira o valor do faturamento do mês"
+          placeholder="Insira o valor do faturamento."
         />
         <button id="insert-state">Inserir</button>
-        <button id="calc-percentage">Calcular Percentual</button>
+        <button id="calc-percentage">Resetar Tabela</button>
       </section>
     </main>
+    <footer></footer>
     <script src="./js/monthly-invoicing.js"></script>
   </body>
 </html>

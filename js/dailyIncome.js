@@ -132,10 +132,7 @@ days.forEach((el) => {
   }
 });
 
-console.log(sum);
-
 const average = sum / days.length;
-console.log(average);
 
 days.forEach((el) => {
   if (el.valor !== 0) {
@@ -147,6 +144,34 @@ days.forEach((el) => {
 
 const aboveAvarageDays = aboveAvarage.length;
 
-console.log(lowIncome);
-console.log(higherIncome);
-console.log(aboveAvarageDays);
+const calc = (lowVaue, higherValue, middle) => {
+  const tdLow = document.querySelector(".low-value");
+  const tdHigher = document.querySelector(".higher-value");
+  const tdMiddle = document.querySelector(".middle");
+  tdLow.innerHTML = lowVaue;
+  tdHigher.innerHTML = higherValue;
+  tdMiddle.innerHTML = middle;
+};
+
+const montaTd = (el) => {
+  const td = document.createElement("td");
+  td.innerHTML = el;
+  return td;
+};
+
+const montaTr = (day, income) => {
+  console.log(day);
+  console.log(income);
+  const tr = document.createElement("tr");
+  tr.appendChild(montaTd(day));
+  tr.appendChild(montaTd(income));
+  return tr;
+};
+
+window.onload = () => {
+  const table = document.querySelector(".daily-income table tbody");
+  days.forEach((el) => {
+    table.appendChild(montaTr(el.dia, el.valor));
+  });
+  calc(lowIncome, higherIncome, aboveAvarageDays);
+};
